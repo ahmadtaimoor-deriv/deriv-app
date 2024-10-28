@@ -14,7 +14,7 @@ const TradeParametersContainer = ({
     is_minimized,
     is_minimized_visible,
 }: React.PropsWithChildren<TTradeParametersContainer>) => {
-    const is_minimized_and_visible = is_minimized;
+    const is_minimized_and_visible = is_minimized && is_minimized_visible;
     return (
         <section
             className={clsx('', {
